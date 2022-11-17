@@ -1,4 +1,4 @@
-const getUniqueErrorMessage(error) => {
+const getUniqueErrorMessage = (error) => {
     let output
     try{
         let fieldName= error.message.substring(error.message.lastINdexOf('.$') + 2, 
