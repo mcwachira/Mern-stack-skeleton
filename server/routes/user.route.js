@@ -15,7 +15,7 @@ const {
 router.post('/api/users', createUser)
 
 //get all users
-router.get('/api/users', requireSignIn, getUserList)
+router.get('/api/users', getUserList)
 
 //get user by id
 router.get(`/api/users/:userId`, requireSignIn, getUserById)
